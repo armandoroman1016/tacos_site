@@ -1,0 +1,72 @@
+nav{
+
+    width: 100vw;
+    height:100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 3rem 0;
+    background: #1a1a1a;
+    z-index: 10;
+}
+
+.nav-links{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-links li{
+    font-size: 1.4rem;
+    cursor: pointer;
+    color: #f9f9f9;
+}
+
+.logo{
+ 
+    /* logo styles here */
+
+}
+
+.logo h1{
+    font-size: 3.2rem;
+    color: #f9f9f9;
+}
+
+.social-links{
+
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.social-links li img{
+
+    width: auto;
+    height: 2.2rem;
+    margin: auto 0;
+    cursor: pointer;
+}
+
+
+.social-links li button{
+
+    width: 100%;
+    font-family: 'Poppins', 'Raleway', 'Montserrat', 'Roboto Condensed', 'Courier New', Courier, monospace;
+    height: 2.2rem;
+    margin: auto 0;
+    padding: 0 2.6rem;  
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #d49029;
+    background: none;
+    border: 1.2px solid #d49029;
+    cursor: pointer;
+
+}
+
