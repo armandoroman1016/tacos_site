@@ -14,7 +14,7 @@ footer .top{
     display: flex;
     justify-content: space-between;
     padding-bottom: 4rem;
-    border-bottom: 2px dotted rgba(208, 132, 18, .5);
+    border-bottom: 2px dotted rgba(208, 132, 18, .3);
 }
 
 footer .top p{
