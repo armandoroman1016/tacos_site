@@ -1,0 +1,11 @@
+.menu{
+    width: 100%;
+    height: 100%;
+    max-width: 100vw;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-content: space-around;
+    overflow: hidden;
+
+}

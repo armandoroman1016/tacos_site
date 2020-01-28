@@ -1,6 +1,6 @@
 nav{
 
-    width: 100vw;
+    width: 100%;
     height:100%;
     display: flex;
     justify-content: space-around;
@@ -8,6 +8,7 @@ nav{
     padding: 3rem 0;
     background: #1a1a1a;
     z-index: 10;
+    overflow: hidden;
 }
 
 .nav-links{
@@ -15,12 +16,19 @@ nav{
     height: 100%;
     display: flex;
     justify-content: space-between;
+    
 }
 
 .nav-links li{
     font-size: 1.4rem;
     cursor: pointer;
     color: #f9f9f9;
+    transition:  all .25s linear;
+}
+
+.nav-links li:hover{
+    color: #d49029;
+
 }
 
 .logo{
@@ -68,5 +76,16 @@ nav{
     border: 1.2px solid #d49029;
     cursor: pointer;
 
+    transition: 
+    color .2s linear,
+    background .2s linear;
 }
 
+
+.social-links li button:hover{
+
+    color: #f9f9f9;
+    background: #d49029;
+
+
+}
