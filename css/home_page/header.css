@@ -3,7 +3,7 @@
     width: 100%;
     height: 100vh;
     z-index: -1;
-    background:  linear-gradient( rgba(26, 26, 26, .3), rgba(26, 26, 26, .3)), url('../../assets/tacos-banner.png');
+    background: linear-gradient( rgba(26, 26, 26, .5), rgba(26, 26, 26, .5)), url('../../assets/video_bg.jpg');;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: bottom ;

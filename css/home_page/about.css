@@ -1,11 +1,88 @@
-.menu{
-    width: 100%;
+.about{
+    width: 75%;
     height: 100%;
-    max-width: 100vw;
+    /* max-width: 100vw; */
     background-color: #ffffff;
     display: flex;
     justify-content: space-between;
     align-content: space-around;
-    overflow: hidden;
+    margin: 3rem auto;
+}
 
+.about .left, .about .right{
+    width: 50%
+}
+
+.about .left :first-child{
+
+    width: 70%;
+    margin: 0 auto;
+    height: auto;
+
+}
+
+.about .right{
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+}
+
+.about .right h3{
+    font-family: 'Bebas Neue', 'Poppins', 'Raleway', 'Montserrat', 'Roboto Condensed', 'Courier New', Courier, monospace;
+    font-size: 2.8rem;
+    color: #d49029;
+    padding-bottom: 3rem;
+}
+
+.about .right span{
+    font-size: 3.2rem;
+    font-weight: bolder;
+    padding-bottom: 1rem;
+}
+
+.about .right p{
+    font-size: 1rem;
+    line-height: 2;
+    font-weight: 100;
+    width: 90%;
+
+}
+
+.video-container{
+    width: 100%;
+    /* border: 1px solid orchid; */
+    overflow: hidden;
+    height: 50rem;
+    background:  linear-gradient( rgba(26, 26, 26, .3), rgba(26, 26, 26, .3)), url('../../assets/tacos-banner.png');
+
+    /* background: linear-gradient( rgba(26, 26, 26, .5), rgba(26, 26, 26, .5)), url('../../assets/video_bg.jpg');; */
+    background-repeat: no-repeat;
+    background-position: center ;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.video-container h3{
+    color: #d49029;
+    text-shadow: 1px 1px 1px #1a1a1a;
+    padding-bottom: 2rem;
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+.video-container p{
+    color: #ffffff;
+    font-size: 2.2rem;
+    padding-bottom: 2rem;
+    font-weight: bolder;
+    text-shadow: 1px 1px 1px #1a1a1a;
+
+}
+
+.video-container img{
+    width: 10rem;
+    cursor: pointer;
 }

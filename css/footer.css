@@ -1,0 +1,39 @@
+footer{
+    max-width: 100vw;
+    height: 100%;
+    padding: 6rem 8rem 2rem 8rem;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+footer .top{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 4rem;
+    border-bottom: 2px dotted rgba(208, 132, 18, .5);
+}
+
+footer .top p{
+    font-style: italic;
+    padding-bottom: 1.4rem;
+}
+
+footer .top .location :first-child{
+    font-style: normal;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+footer .top .location :last-child{
+    font-style: normal;
+    font-size: 1.2rem;
+}
+
+footer .bottom{
+    padding-top: 4rem;
+    text-align: center;
+}
