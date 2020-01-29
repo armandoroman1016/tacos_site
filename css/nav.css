@@ -19,14 +19,15 @@ nav{
     
 }
 
-.nav-links li{
+.nav-links li a{
     font-size: 1.4rem;
     cursor: pointer;
     color: #f9f9f9;
     transition:  all .25s linear;
+    text-decoration: none;
 }
 
-.nav-links li:hover{
+.nav-links li a:hover{
     color: #d49029;
 
 }
