@@ -42,12 +42,30 @@
     margin: 0 auto;
 }
 
-.menu_items .menu_item{
+@media screen and (max-width: 1096px){
+    .menu_items{
+        width:85%;
+        padding: 2rem 0;
+    }
+}
 
+
+
+.menu_items .menu_item{
     width: 45%;
     position: relative;
     padding: 2rem 0;
 }
+
+@media screen and (max-width: 1096px){
+    .menu_items .menu_item{
+        width:46%;
+        height: 10rem;
+        padding: 3rem 0;
+    }
+}
+
+
 
 
 .menu_items .menu_item img{
@@ -55,6 +73,24 @@
     height: 11rem;
     width: 11rem;
     object-fit: cover;
+}
+
+@media screen and (max-width: 1096px){
+    .menu_items .menu_item img{
+        height: 9rem;
+        width: 9rem;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .menu_items .menu_item img{
+        position: absolute;
+        height: 5rem;
+        width: 5rem;
+        top: 0;
+        left: 0;
+        padding: 2rem 0;
+    }
 }
 
 .menu_items .menu_item h4{
@@ -65,6 +101,19 @@
     font-size: 1.4rem;
     font-weight: bold;
     
+}
+
+@media screen and (max-width: 1096px){
+    .menu_items .menu_item h4{
+        left: 11rem;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .menu_items .menu_item h4{
+        left: 7rem;
+        top: 4rem;
+    }
 }
 
 .menu_items .menu_item p{
@@ -81,6 +130,23 @@
     
 }
 
+@media screen and (max-width: 1096px){
+    .menu_items .menu_item p{
+        left: 11rem;
+        line-height: 1.5;
+        width: 55%;   
+    }
+}
+
+@media screen and (max-width: 800px){
+    .menu_items .menu_item p{
+        left: 6rem;
+        line-height: 1.5;
+        left: 0;
+        top: 6.2rem;
+        width: 100%;   
+    }
+}
 
 .menu a{
 
@@ -101,6 +167,12 @@
     transition: background .25s linear, 
     color .25s linear;
 
+}
+
+@media screen and (max-width: 1096px){
+    .menu a{
+        width: 85%;
+    }
 }
 
 .menu a:hover{
@@ -185,7 +257,21 @@
     line-height: 1.25;
     color: #d49029;
     font-weight: bold;
-    text-shadow: 1px 1px 1px black;
+    text-shadow: 1px 1px 1px #1a1a1a;
+}
+
+@media screen and (max-width: 1042px){
+    .menu .menu_specialties .left_specialty :last-child, 
+    .menu .menu_specialties .right_specialty :last-child{
+        width: 75%;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .menu .menu_specialties .left_specialty :last-child, 
+    .menu .menu_specialties .right_specialty :last-child{  
+        font-size: 1.2rem;
+    }
 }
 
 

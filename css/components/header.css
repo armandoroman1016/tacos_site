@@ -35,12 +35,23 @@
 
 }
 
+@media screen and (max-width: 1096px){
+    .banner span{
+        transform: translateY(-4rem);
+    }
+}
+
 .banner :nth-child(3){
     color: #d49029;
     transform: translateY(-8rem);
-
-
 }
+
+@media screen and (max-width: 1096px){
+    .banner :nth-child(3){
+        transform: translateY(-5rem);
+    }
+}
+
 .menu_banner{
     background: linear-gradient( rgba(26, 26, 26, .5), rgba(26, 26, 26, .5)), url('../../assets/3_tacos.jpg');
 }

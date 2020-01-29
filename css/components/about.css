@@ -9,9 +9,28 @@
     margin: 3rem auto;
 }
 
-.about .left, .about .right{
-    width: 50%
+@media screen and (max-width: 1096px){
+    .about{
+        width: 85%;
+        padding: 3rem 0;
+    }
 }
+
+@media screen and (max-width: 800px){
+    .about{
+        width: 90%;
+        padding: 2rem 0;
+    }
+}
+
+.about .left, .about .right{
+    width: 50%;
+    height: 100%;
+    margin: auto 0;
+}
+
+
+
 
 .about .left :first-child{
 
@@ -21,11 +40,43 @@
 
 }
 
+@media screen and (max-width: 1096px){
+    .about .left :first-child{
+        height: 24rem;
+        width: auto;
+        margin: auto 0;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .about .left :first-child{
+        height: 17rem;
+        width: auto;
+        margin: auto 0;
+    }
+}
+
 .about .right{
     width: fit-content;
     display: flex;
     flex-direction: column;
 }
+
+@media screen and (max-width: 1096px){
+    .about .right{
+        height: 24rem; 
+        padding-left: 2rem;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .about .right{
+        height: 100%; 
+        padding: 0;
+    }
+}
+
+
 
 .about .right h3{
     font-family: 'Indie Flower', 'Raleway', 'Montserrat', 'Roboto Condensed', 'Courier New', Courier, monospace;
@@ -35,11 +86,32 @@
     padding-bottom: 3rem;
 }
 
+@media screen and (max-width: 1096px){
+    .about .right h3{
+        font-size: 2rem;
+        padding-bottom: 1.2rem; 
+    }
+}
+
 .about .right span{
     font-size: 3.2rem;
     font-weight: bolder;
     padding-bottom: 1rem;
 }
+
+@media screen and (max-width: 1096px){
+    .about .right span{
+        font-size: 2.2rem;
+    }
+}
+
+@media screen and (max-width: 1096px){
+    .about .right span{
+        font-size: 2rem;
+    }
+}
+
+
 
 .about .right p{
     font-size: 1rem;
