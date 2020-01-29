@@ -1,4 +1,4 @@
-#banner{
+.banner{
 
     width: 100%;
     height: 100vh;
@@ -15,7 +15,7 @@
     
 }
 
-#banner p{
+.banner p{
     padding: 5rem 0;
     color: #f9f9f9;
     font-size: 1.8rem;
@@ -27,7 +27,7 @@
     background-size: contain;
 }
 
-#banner span{
+.banner span{
 
     color: #f9f9f9;
     font-size: 7rem;
@@ -35,11 +35,25 @@
 
 }
 
-#banner :nth-child(3){
+.banner :nth-child(3){
     color: #d49029;
     transform: translateY(-8rem);
 
 
 }
+.menu_banner{
+    background: linear-gradient( rgba(26, 26, 26, .5), rgba(26, 26, 26, .5)), url('../../assets/3_tacos.jpg');
+}
 
+.contact_banner{
+    background: linear-gradient( rgba(26, 26, 26, .5), rgba(26, 26, 26, .5)), url('../../assets/tacos_sampler.jpg');
+}
+.menu_banner, .contact_banner{
+    height: 40vh;
+    background-position: center ;
+    background-size: cover;
+}
 
+.menu_banner p, .contact_banner p{
+    transform: translateY(0);
+}
