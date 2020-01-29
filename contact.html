@@ -14,19 +14,10 @@
         <link rel="stylesheet" href="css/nav.css">
         <link rel="stylesheet" href="css/footer.css">
         <link rel="stylesheet" href="css/components/header.css">
-        <link rel="stylesheet" href="css/components/menu.css">
-        <link rel="stylesheet" href="css/components/about.css">
+        <link rel="stylesheet" href="css/components/contact.css">
 
         <link href="https://fonts.googleapis.com/css?family=Bebas+Neue|Montserrat|Poppins|Raleway|Roboto+Condensed|Satisfy|Indie+Flower&display=swap" rel="stylesheet">
-        <style>
-            /* Always set the map height explicitly to define the size of the div
-             * element that contains the map. */
-            #map {
-              height: 30rem;
-              width: 40rem;
-            }
-            /* Optional: Makes the sample page fill the window. */
-        </style>
+
     </head>
 
     <body>
@@ -90,6 +81,21 @@
         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAgTiaTBIqr0UJ03Ro2wi1wURCnSxjH6jE&callback=initMap"
         async defer></script>
 
+        <div class = "form_container">
+            <h3>Get in touch</h3>
+            <div>
+                <form>
+                    <textarea placeholder="Enter Message" name = 'message' required></textarea>
+                    <input placeholder="Enter your name" name = 'name' required/>
+                    <input placeholder="Email" name = 'email' required/>
+                    <input placeholder="Subject" name = 'subject' required/>
+                    <button type = 'submit'>SUBMIT</button>
+                </form>
+                <div class="contact_info">
+
+                </div>
+            </div>
+        </div>
     </body>
     
     <footer>

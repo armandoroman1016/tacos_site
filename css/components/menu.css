@@ -97,7 +97,7 @@
     color: #e12533;
     background: #ffffff;
     border: 1px solid #e12533;
-    
+    margin-bottom: 3rem;
     transition: background .25s linear, 
     color .25s linear;
 
