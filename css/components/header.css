@@ -12,7 +12,12 @@
     align-items: center;
     justify-content: center;
     overflow: hidden;
-    
+}
+
+@media screen and (max-width: 500px){
+    .banner{
+        height: 60vh;
+    }
 }
 
 .banner p{
@@ -25,6 +30,14 @@
     background-repeat: no-repeat;
     background-position: center ;
     background-size: contain;
+}
+
+@media screen and (max-width: 500px){
+    .banner p{
+        transform: translateY(-1rem);
+        height: 10%;
+        padding: 1rem;
+    }
 }
 
 .banner span{
@@ -41,6 +54,15 @@
     }
 }
 
+@media screen and (max-width: 500px){
+    .banner span{
+        font-size: 2.6rem;
+        font-weight: bold;
+        transform: translateY(0);
+        text-shadow: 1px 1px 5px #1a1a1a;
+    }
+}
+
 .banner :nth-child(3){
     color: #d49029;
     transform: translateY(-8rem);
@@ -49,6 +71,12 @@
 @media screen and (max-width: 1096px){
     .banner :nth-child(3){
         transform: translateY(-5rem);
+    }
+}
+
+@media screen and (max-width: 500px){
+    .banner :nth-child(3){
+        transform: translateY(.5rem);
     }
 }
 

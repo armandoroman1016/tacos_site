@@ -20,6 +20,13 @@ footer{
     }
 }
 
+@media screen and (max-width: 500px){
+    footer{
+        padding: 0 1rem;
+        flex-wrap: wrap;
+    }
+}
+
 
 footer .top{
     width: 100%;
@@ -33,6 +40,22 @@ footer .top{
     footer .top{
         padding-bottom: 2rem;
     }
+}
+
+@media screen and (max-width: 500px){
+    footer .top{
+        width: 100%;
+        padding-bottom: 0;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 500px){
+    footer .top .location{
+        text-align: center;
+        padding: 1.4rem;
+    }
+
 }
 
 footer .top p{
@@ -73,4 +96,11 @@ footer .bottom{
     footer .bottom{
         padding-top: 2rem;
     }
+}
+
+@media screen and (max-width: 500px){
+    footer .bottom{
+        padding: 1.4rem 0;
+    }
+
 }

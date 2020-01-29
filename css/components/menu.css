@@ -49,6 +49,14 @@
     }
 }
 
+@media screen and (max-width: 500px){
+    .menu_items{
+        width: 100%;
+        padding: 0 1rem;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}
 
 
 .menu_items .menu_item{
@@ -65,6 +73,11 @@
     }
 }
 
+@media screen and (max-width: 500px){
+    .menu_items .menu_item{
+        width:100%;
+    }
+}
 
 
 
@@ -175,6 +188,12 @@
     }
 }
 
+@media screen and (max-width: 500px){
+    .menu a{
+        padding: 1.2rem 0;
+    }
+}
+
 .menu a:hover{
     color: #ffffff;
     background: #e12533;
@@ -191,9 +210,21 @@
     overflow: hidden;
 }
 
+@media screen and (max-width: 500px){
+    .menu .menu_specialties{
+        flex-direction: column;
+    }
+}
+
 .menu .menu_specialties .outer{
      height: 28rem;
      overflow: hidden; 
+}
+
+@media screen and (max-width: 500px){
+    .menu .menu_specialties .outer{
+        height: 22rem;
+    }
 }
 
 .menu .menu_specialties .left_specialty{
@@ -205,7 +236,8 @@
     background: linear-gradient( rgba(26, 26, 26, .5), rgba(26, 26, 26, .5)), url('../../assets/3_tacos.jpg');
 }
 
-.menu .menu_specialties .left_specialty, .menu .menu_specialties .right_specialty{
+.menu .menu_specialties .left_specialty, 
+.menu .menu_specialties .right_specialty{
 
     width: 50vw;
     margin: 0 0 1rem 0;
@@ -223,6 +255,15 @@
     
 }
 
+@media screen and (max-width: 500px){
+    .menu .menu_specialties .left_specialty, 
+    .menu .menu_specialties .right_specialty{
+        width: 100vw;
+        padding-left: 1.2rem;
+    }
+}
+
+
 .menu .menu_specialties .left_specialty:hover, 
 .menu .menu_specialties .right_specialty:hover{
     transform: scale(1.05);
@@ -237,6 +278,16 @@
     width: 50%;
 }
 
+@media screen and (max-width: 500px){
+    .menu .menu_specialties .left_specialty p, 
+    .menu .menu_specialties .right_specialty p, 
+    .menu .menu_specialties .right_specialty h3,
+    .menu .menu_specialties .left_specialty h3{
+        width: 90%;
+    }
+}
+
+
 .menu .menu_specialties .left_specialty :first-child, 
 .menu .menu_specialties .right_specialty :first-child{
     color: #e12533;
@@ -244,11 +295,26 @@
     text-shadow: 1px 1px 1px black;
 }
 
+@media screen and (max-width: 500px){
+    .menu .menu_specialties .left_specialty :first-child, 
+    .menu .menu_specialties .right_specialty :first-child{  
+        font-size: 1.6rem;
+    }
+}
+
 .menu .menu_specialties .left_specialty h3, 
 .menu .menu_specialties .right_specialty h3{
     color: #f9f9f9;
     font-size: 1.8rem;
     font-weight: bold;
+    text-shadow: 1px 1px 4px #1a1a1a;
+}
+
+@media screen and (max-width: 500px){
+    .menu .menu_specialties .left_specialty h3, 
+    .menu .menu_specialties .right_specialty h3{  
+        font-size: 1.4rem;
+    }
 }
 
 .menu .menu_specialties .left_specialty :last-child, 
@@ -257,7 +323,7 @@
     line-height: 1.25;
     color: #d49029;
     font-weight: bold;
-    text-shadow: 1px 1px 1px #1a1a1a;
+    text-shadow: 1px 1px 4px #1a1a1a;
 }
 
 @media screen and (max-width: 1042px){
@@ -273,5 +339,13 @@
         font-size: 1.2rem;
     }
 }
+
+@media screen and (max-width: 500px){
+    .menu .menu_specialties .left_specialty :last-child, 
+    .menu .menu_specialties .right_specialty :last-child{  
+        font-size: 1rem;
+    }
+}
+
 
 
