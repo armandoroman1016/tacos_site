@@ -59,11 +59,19 @@
 .contact_banner{
     background: linear-gradient( rgba(26, 26, 26, .5), rgba(26, 26, 26, .5)), url('../../assets/tacos_sampler.jpg');
 }
+
 .menu_banner, .contact_banner{
     height: 40vh;
     background-position: center ;
     background-size: cover;
 }
+
+@media screen and (max-width: 1096px){
+    .menu_banner, .contact_banner{
+        height: 28vh;
+    }
+}
+
 
 .menu_banner p, .contact_banner p{
     transform: translateY(0);
