@@ -6,8 +6,20 @@ footer{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
 }
+
+@media screen and (max-width: 1096px){
+    footer{
+        padding: 2rem 4rem 2rem 4rem;
+    }
+}
+
+@media screen and (max-width: 800px){
+    footer{
+        padding: 2rem 3.6rem 2rem 3.6rem;
+    }
+}
+
 
 footer .top{
     width: 100%;
@@ -15,6 +27,12 @@ footer .top{
     justify-content: space-between;
     padding-bottom: 4rem;
     border-bottom: 2px dotted rgba(208, 132, 18, .3);
+}
+
+@media screen and (max-width: 800px){
+    footer .top{
+        padding-bottom: 2rem;
+    }
 }
 
 footer .top p{
@@ -28,12 +46,31 @@ footer .top .location :first-child{
     font-weight: bold;
 }
 
+@media screen and (max-width: 800px){
+    footer .top .location :first-child{
+        font-size: 1.4rem;
+        font-weight: bold;
+    }
+}
+
 footer .top .location :last-child{
     font-style: normal;
     font-size: 1.2rem;
 }
 
+@media screen and (max-width: 800px){
+    footer .top .location :last-child{
+        font-size: 1rem;
+    }
+}
+
 footer .bottom{
     padding-top: 4rem;
     text-align: center;
+}
+
+@media screen and (max-width: 800px){
+    footer .bottom{
+        padding-top: 2rem;
+    }
 }
