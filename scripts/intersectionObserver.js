@@ -45,6 +45,7 @@ const menuItemCb = (entries, observer) => {
     entries.forEach(entry => {
         if(entry.isIntersecting){
             entry.target.classList.add("fade_in")
+            observer.unobserve(entry.target)
         }else{
             if(entry.target.classList.contains("fade_in")){
                 entry.target.classList.remove("fade_in")
@@ -100,4 +101,35 @@ specialtyItems.forEach(item => {
 
 
 // menu specialty items observer end here
+
+
+// about observer section observer starts here
+
+const aboutItems = document.querySelectorAll('.about_item')
+const aboutContainer = document.querySelector('.about')
+
+
+const aboutCb = (entries, observer) => {
+    entries.forEach(entry => {
+        if(entry.isIntersecting){
+            // entry.target.classList.add("slide_down")
+            // console.log('en', entry.target)
+            aboutItems.forEach(item => item.classList.add('slide_down'))
+            observer.unobserve(entry.target)
+        }
+    })
+
+}
+
+const aboutItemOptions = {
+    root: null, // is the viewport
+    threshold: 0,
+    rootMargin: "-225px 0px"
+}
+
+const aboutItemObserver = new IntersectionObserver(aboutCb, aboutItemOptions)
+
+aboutItemObserver.observe(aboutContainer)
+
+
 
