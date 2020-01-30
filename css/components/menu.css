@@ -63,6 +63,14 @@
     width: 45%;
     position: relative;
     padding: 2rem 0;
+    opacity: 0;
+    transition: opacity .35s ease-out;
+}
+
+.menu_items .menu_item.fade_in{
+    opacity: 1;
+    transition: opacity .35s ease-in;
+
 }
 
 @media screen and (max-width: 1096px){
