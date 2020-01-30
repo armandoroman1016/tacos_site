@@ -190,6 +190,8 @@ nav .mobile-nav-links{
         width: 100%;
         background: #e12533;
         opacity: 0;
+
+        transition: all .5s ease;
     }
 }
 

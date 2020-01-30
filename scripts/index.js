@@ -3,8 +3,12 @@ let mobileLinks =  document.querySelector('.mobile-nav-links')
 
 hamburgerButton.addEventListener('click', (e) => {
     
-    mobileLinks.classList.add('show')
+    const isShown = mobileLinks.classList.contains('show')
+
+    if(isShown){
+        mobileLinks.classList.remove('show')
+    }else{
+        mobileLinks.classList.add('show')
+    }
     
-
-
 })
