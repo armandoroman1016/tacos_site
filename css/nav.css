@@ -1,15 +1,14 @@
 nav{
-
+    position: fixed;
+    top: 0;
     width: 100%;
-    height:100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
     padding: 3rem 0;
-    background: #1a1a1a;
+    background: transparent;
     z-index: 10;
-    position: relative;
-
+    
 }
 
 @media screen and (max-width: 1096px){
@@ -19,6 +18,7 @@ nav{
         max-width: 100vw;
         height: 8rem;
         justify-content: space-between;
+        /* position: relative; */
     }
 }
 
@@ -32,10 +32,8 @@ nav{
 
 .nav-links{
     width: 30%;
-    height: 100%;
     display: flex;
     justify-content: space-between;
-    
 }
 
 @media screen and (max-width: 1096px){
@@ -53,7 +51,7 @@ nav{
 }
 
 .nav-links li a:hover{
-    color: #d49029;
+    color: #F2F2F2;
 
 }
 
@@ -66,6 +64,7 @@ nav{
 .logo h1{
     font-size: 3.2rem;
     color: #f9f9f9;
+
 }
 
 @media screen and (max-width: 1096px){
@@ -98,7 +97,7 @@ nav{
     }
 }
 
-.social-links li img{
+.social-links li svg{
 
     width: auto;
     height: 2.2rem;
@@ -118,9 +117,9 @@ nav{
     border-radius: 6px;
     font-size: 1rem;
     font-weight: bold;
-    color: #d49029;
+    color: #F2F2F2;
     background: none;
-    border: 1.2px solid #d49029;
+    border: 1.2px solid #F2F2F2;
     cursor: pointer;
 
     transition: 
@@ -132,8 +131,7 @@ nav{
 .social-links li button:hover{
 
     color: #f9f9f9;
-    background: #d49029;
-
+    background: #E0E0D7;
 
 }
 
@@ -226,5 +224,38 @@ nav .mobile-nav-links.show li a{
 
 nav .mobile-nav-links li a{
     opacity: 0;
+}
+
+nav.scrolled{
+    background: #F2F2F2;
+    filter: drop-shadow(1px 1px 3px #1a1a1a);
+}
+
+nav.scrolled .nav-links li a{
+    color: #1a1a1a
+}
+
+nav.scrolled .nav-links li a:hover{
+    color: #e12533
+}
+
+nav.scrolled .logo h1{
+    color: #1a1a1a;
+
+}
+
+
+nav.scrolled .social-links li button{
+
+    color: #1a1a1a;
+    border: 1.2px solid #1a1a1a;
+
+}
+
+nav.scrolled .social-links li button:hover{
+
+    color: #F2F2F2;
+    background: #1a1a1a;
+
 }
 
