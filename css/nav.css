@@ -5,9 +5,11 @@ nav{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 3rem 0;
+    padding: 2.4rem 0;
     background: transparent;
     z-index: 10;
+    transition: background .5s ease;
+    
     
 }
 
@@ -51,7 +53,7 @@ nav{
 }
 
 .nav-links li a:hover{
-    color: #F2F2F2;
+    color: 	#ff8c00;
 
 }
 
@@ -97,12 +99,13 @@ nav{
     }
 }
 
-.social-links li svg{
+.social-links li img{
 
     width: auto;
     height: 2.2rem;
     margin: auto 0;
     cursor: pointer;
+    filter: drop-shadow(1px 1px 0.5px #1a1a1a);
 }
 
 
@@ -110,28 +113,36 @@ nav{
 
     width: 100%;
     font-family: 'Poppins', 'Raleway', 'Montserrat', 'Roboto Condensed', 'Courier New', Courier, monospace;
-    height: 2.2rem;
+    height: 2.4rem;
     margin: auto 0;
     padding: 0 2.6rem;  
     border: none;
     border-radius: 6px;
     font-size: 1rem;
     font-weight: bold;
-    color: #F2F2F2;
-    background: none;
-    border: 1.2px solid #F2F2F2;
+    color: #f9f9f9;
+    background: #e12533;
+    border: 1.2px solid #e12533;
     cursor: pointer;
 
     transition: 
     color .2s linear,
-    background .2s linear;
+    background .2s linear,
+    border .2s linear;
+
 }
 
 
 .social-links li button:hover{
 
-    color: #f9f9f9;
-    background: #E0E0D7;
+    color: #ff8c00;
+    background: #f9f9f9;
+    border: 1.2px solid #f9f9f9;
+
+    transition: 
+    color .2s linear,
+    background .2s linear,
+    border .2s linear;
 
 }
 
@@ -229,6 +240,7 @@ nav .mobile-nav-links li a{
 nav.scrolled{
     background: #F2F2F2;
     filter: drop-shadow(1px 1px 3px #1a1a1a);
+    transition: background .5s ease;
 }
 
 nav.scrolled .nav-links li a{
@@ -247,15 +259,15 @@ nav.scrolled .logo h1{
 
 nav.scrolled .social-links li button{
 
-    color: #1a1a1a;
-    border: 1.2px solid #1a1a1a;
+    color: #f9f9f9;
+    border: 1.2px solid #e12533;
 
 }
 
 nav.scrolled .social-links li button:hover{
 
     color: #F2F2F2;
-    background: #1a1a1a;
+    background: #e12533;
 
 }
 

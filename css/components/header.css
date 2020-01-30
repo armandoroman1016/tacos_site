@@ -50,7 +50,7 @@
 
 @media screen and (max-width: 1096px){
     .banner span{
-        transform: translateY(-4rem);
+        transform: translateY(3rem);
     }
 }
 
@@ -70,7 +70,7 @@
 
 @media screen and (max-width: 1096px){
     .banner :nth-child(3){
-        transform: translateY(-5rem);
+        transform: translateY(1.4rem);
     }
 }
 
