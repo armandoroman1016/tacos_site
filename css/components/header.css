@@ -3,7 +3,7 @@
     width: 100%;
     height: 100vh;
     z-index: -1;
-    background: linear-gradient( rgba(26, 26, 26, .5), rgba(26, 26, 26, .5)), url('../../assets/video_bg.jpg');;
+    background: linear-gradient( rgba(26, 26, 26, .5), rgba(26, 26, 26, .5)), url('../../assets/video_bg.jpg') transparent;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: bottom ;
@@ -11,7 +11,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    overflow: hidden;
+    position: relative;
 }
 
 @media screen and (max-width: 500px){
