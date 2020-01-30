@@ -72,10 +72,8 @@ menuItems.forEach(item => {
 const specialtyItems = document.querySelectorAll('.specialty')
 const specialtyContainer = document.querySelector('.menu_specialties')
 
-console.log(specialtyItems)
 const specialtyCb = (entries, observer) => {
 
-    console.log(entries)
     entries.forEach(entry => {
         if(entry.isIntersecting){
             entry.target.classList.add("slide_in")
@@ -91,7 +89,7 @@ const specialtyCb = (entries, observer) => {
 const specialtyItemOptions = {
     root: null, // is the viewport
     threshold: 0,
-    rootMargin: "-120px 0px "
+    rootMargin: "-75px 0px "
 }
 
 const specialtyItemObserver = new IntersectionObserver(specialtyCb, specialtyItemOptions)
