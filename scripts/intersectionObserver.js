@@ -65,3 +65,41 @@ const menuItemsObserver = new IntersectionObserver(menuItemCb, menuItemOptions)
 menuItems.forEach(item => {
     menuItemsObserver.observe(item)
 })
+
+// menu items observer ends here
+
+// menu specialty items observer starts here
+const specialtyItems = document.querySelectorAll('.specialty')
+const specialtyContainer = document.querySelector('.menu_specialties')
+
+console.log(specialtyItems)
+const specialtyCb = (entries, observer) => {
+
+    console.log(entries)
+    entries.forEach(entry => {
+        if(entry.isIntersecting){
+            entry.target.classList.add("slide_in")
+        }else{
+            if(entry.target.classList.contains("slide_in")){
+                entry.target.classList.remove("slide_in")
+            }
+        }
+    })
+
+}
+
+const specialtyItemOptions = {
+    root: null, // is the viewport
+    threshold: 0,
+    rootMargin: "-120px 0px "
+}
+
+const specialtyItemObserver = new IntersectionObserver(specialtyCb, specialtyItemOptions)
+
+specialtyItems.forEach(item => {
+    specialtyItemObserver.observe(item)
+})
+
+
+// menu specialty items observer end here
+

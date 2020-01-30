@@ -226,7 +226,24 @@
 
 .menu .menu_specialties .outer{
      height: 28rem;
-     overflow: hidden; 
+     overflow: hidden;
+      
+}
+
+.menu .menu_specialties .outer.left{
+    transform: translateX(-100%);
+    transition: .5s ease-out;
+}
+
+.menu .menu_specialties .outer.right{
+    transform: translateX(100%);
+    transition: .5s ease-out;
+}
+
+.menu .menu_specialties .outer.left.slide_in,
+.menu .menu_specialties .outer.right.slide_in{
+    transform: translateX(0);
+    transition: .5s ease;
 }
 
 @media screen and (max-width: 500px){
