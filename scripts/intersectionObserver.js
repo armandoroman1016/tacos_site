@@ -174,6 +174,34 @@ if(videoItems){
 
 // video observer section observer ends here
 
+// testimonial observer section observer starts here
+
+const testimonials = document.querySelector('.testimonials')
+
+
+const testimonialCb = (entries, observer) => {
+    entries.forEach(entry => {
+        if(entry.isIntersecting){
+            entry.target.classList.add("slide_in")
+        }
+    })
+
+}
+
+const testimonialOptions = {
+    root: null, // is the viewport
+    threshold: 0,
+    rootMargin: "-240px 0px"
+}
+
+const testimonialObserver = new IntersectionObserver(testimonialCb, testimonialOptions)
+
+if(testimonials){
+    testimonialObserver.observe(testimonials)
+}
+
+// testimonial observer section observer ends here
+
 
 
 
