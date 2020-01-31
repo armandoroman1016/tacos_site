@@ -90,9 +90,9 @@
     margin-top: 2rem;
     width: 33%;
     height: 3rem;
-    border: 1px solid #C9CC62;
+    border: 1px solid #ff8c00;
     background: none;
-    color: #C9CC62;
+    color: #ff8c00;
     cursor: pointer;
     font-family: 'Poppins', 'Raleway', 'Montserrat', 'Roboto Condensed', 'Courier New', Courier, monospace;
     font-size: 1.2rem;
@@ -101,7 +101,7 @@
 }
 
 .form_container :last-child form button:hover{
-    background: #C9CC62;
+    background: #ff8c00;
     color: #ffffff;
 }
 
