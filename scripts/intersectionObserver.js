@@ -31,7 +31,9 @@ const bannerOptions = {
 
 const bannerObserver = new IntersectionObserver(bannerCb, bannerOptions);
 
-bannerObserver.observe(banner)
+if(banner){
+    bannerObserver.observe(banner)
+}
 
 // nav bar classlist toggling ends here
 
@@ -63,9 +65,11 @@ const menuItemOptions = {
 
 const menuItemsObserver = new IntersectionObserver(menuItemCb, menuItemOptions)
 
-menuItems.forEach(item => {
-    menuItemsObserver.observe(item)
-})
+if(menuItems){
+    menuItems.forEach(item => {
+        menuItemsObserver.observe(item)
+    })
+}
 
 // menu items observer ends here
 
@@ -95,9 +99,11 @@ const specialtyItemOptions = {
 
 const specialtyItemObserver = new IntersectionObserver(specialtyCb, specialtyItemOptions)
 
-specialtyItems.forEach(item => {
-    specialtyItemObserver.observe(item)
-})
+if (specialtyItems){
+    specialtyItems.forEach(item => {
+        specialtyItemObserver.observe(item)
+    })
+}
 
 
 // menu specialty items observer end here
@@ -112,8 +118,6 @@ const aboutContainer = document.querySelector('.about')
 const aboutCb = (entries, observer) => {
     entries.forEach(entry => {
         if(entry.isIntersecting){
-            // entry.target.classList.add("slide_down")
-            // console.log('en', entry.target)
             aboutItems.forEach(item => item.classList.add('slide_down'))
             observer.unobserve(entry.target)
         }
@@ -129,7 +133,50 @@ const aboutItemOptions = {
 
 const aboutItemObserver = new IntersectionObserver(aboutCb, aboutItemOptions)
 
-aboutItemObserver.observe(aboutContainer)
+if(aboutContainer){
+    aboutItemObserver.observe(aboutContainer)
+}
+
+// about observer section observer ends here
+
+// video observer section observer starts here
+
+const videoItems = document.querySelectorAll('.video_el')
+const videoContainer = document.querySelector('.video_container')
+
+
+const videoCb = (entries, observer) => {
+    entries.forEach(entry => {
+        if(entry.isIntersecting){
+            entry.target.classList.add("fade_in")
+        }else{
+            if(entry.target.classList.contains("fade_in")){
+                entry.target.classList.remove("fade_in")
+            }
+        }
+    })
+
+}
+
+const videoItemOptions = {
+    root: null, // is the viewport
+    threshold: 0,
+    rootMargin: "-160px 0px"
+}
+
+const videoItemObserver = new IntersectionObserver(videoCb, videoItemOptions)
+
+if(videoItems){
+    videoItems.forEach(item => {
+        videoItemObserver.observe(item)
+    })
+}
+
+// video observer section observer ends here
+
+
+
+
 
 
 

@@ -240,6 +240,17 @@
     }
 }
 
+.video-container .video_el{
+    opacity: 0;
+    transition: opacity .4s ease;
+}
+
+.video-container .video_el.fade_in{
+    opacity: 1;
+    transition: opacity .4s ease;
+
+}
+
 
 .testimonials{
     width: 100%;
